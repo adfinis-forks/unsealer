@@ -134,7 +134,6 @@ func (o *WorkerOptions) unsealAndConfigureVault(vc *vaultapi.Client, keyStore kv
 			}
 
 			glog.Error("failed to configure vault. reason: ", err)
-			continue
 		}
 	}
 }
